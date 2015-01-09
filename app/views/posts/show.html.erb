@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>標題:</strong>
+  <%= @post.title %>
+</p>
+
+<p>
+  <strong>內容:</strong>
+  <%= @post.content %>
+</p>
+
+<p>
+  <strong>張貼者:</strong>
+  <%= @post.user %>
+</p>
+
+<%= link_to '修改', edit_post_path(@post) %> |
+<%= link_to '前一頁', posts_path %>
